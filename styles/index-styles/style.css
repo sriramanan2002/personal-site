@@ -1,0 +1,24 @@
+
+
+.name, .about, .msg , .top-sec-text{
+  font-family: Borel,cursive;
+}
+
+
+.name {
+  font-size: 30px;
+  color: rgb(64, 62, 62);
+}
+
+.about {
+  margin-top: 0;
+  color: rgb(64, 62, 62);
+  font-size: 30px;
+}
+
+.home-butt {
+  color: rgb(129, 47, 71);
+}
+
+
+

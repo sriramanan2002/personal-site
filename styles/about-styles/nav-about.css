@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Borel,  cursive;
+  scroll-behavior: smooth;
+}
+
+.about {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 400px 7% 300px ;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.about-content h2 {
+  font-size: 40px;
+  padding-right: 10px;
+}
+
+.about-content h3 {
+  font-size: 30px;
+  color: rgb(130, 72, 184);
+}
+
+.about-content p {
+font-family: Tektur,cursive; 
+font-size: 25px;
+}
+
+.about-content a {
+  text-decoration: none;
+  padding: 10px 28px;
+  background:rgb(130, 72, 184) ;
+  border: 2px solid rgb(130, 72, 184);
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #eaeaea;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.about-content a:hover {
+  background: transparent;
+  color: rgb(126, 41, 206);
+}
+
+.home-img .rhombus {  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #eaeaea;
+  border: 25px solid rgb(126, 41, 206) ;
+  box-shadow: -15px 15px 15px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  animation: zoomOut 1s ease forwards;
+  animation-delay: 1.6s;
+}
+
+.home-img .rhombus img {
+  position: absolute;
+  height: 650px;
+  left: -210px;
+  top: 30px;
+  max-width: 750px;
+  transform: rotate(-23deg);
+  opacity: 0;
+  animation: man 1s ease forwards;
+  /* man 1s ease forwards */
+  animation-delay: 2s;
+}
+
+.about .rhombus2 {
+  position: absolute;
+  top: -40%;
+  right: -40%;
+  width: 700px;
+  height: 800px;
+  background:rgb(126, 41, 206) ;
+  transform: rotate(45deg);
+  z-index: -1;
+  opacity: 0;
+  animation: rhombus2 1s ease forwards;
+  animation-delay: 1.6s;
+}
+
+
+@keyframes man {
+  0% {
+    transform: translate(300px, -300px) scale(0) rotate(-45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, -0) scale(1) rotate(-45deg);
+    opacity: 1;
+  }
+}
+
+/* media edit */
+
+
+
+@media screen and (max-width:600px)  {
+  .about {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 400px 7% 300px ;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .about-content h2 {
+    font-size: 20px;
+    padding-right: 10px;
+  }
+  
+  .about-content h3 {
+    font-size: 15px;
+    color: rgb(130, 72, 184);
+  }
+  
+  .about-content p {
+    font-size: 13px;
+  }
+
+  .about-content a {
+    text-decoration: none;
+    padding: 5px 14px;
+    background:rgb(130, 72, 184) ;
+    border: 2px solid rgb(130, 72, 184);
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 8px;
+    color: #eaeaea;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 300;
+    transition: 0.5s;
+  }
+  
+ 
+  
+  .home-img{
+    position: relative;
+    right: -5%;
+    width: 200px;
+    height: 600px;
+    transform: rotate(45deg);
+  }
+  
+  .home-img .rhombus {  
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: transparent;
+    opacity: 0;
+    animation: zoomOut 1s ease forwards;
+    animation-delay: 1.6s;
+  }
+  
+  
+  
+  .home-img .rhombus img {
+    position: absolute;
+    height: auto;
+    width: 500px;
+    left: -210px;
+    top: 20px;
+    transform: rotate(-23deg);
+    opacity: 0;
+    animation: man 1s ease forwards;
+    /* man 1s ease forwards */
+    animation-delay: 2s;
+  }
+  
+  .about .rhombus2 {
+    position: absolute;
+    top: -40%;
+    right: -40%;
+    width: 700px;
+    height: 800px;
+    background:transparent;
+    transform: rotate(45deg);
+    z-index: -1;
+    opacity: 0;
+    animation: rhombus2 1s ease forwards;
+    animation-delay: 1.6s;
+  }
+}
+   

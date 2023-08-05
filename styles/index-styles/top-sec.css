@@ -1,0 +1,48 @@
+
+
+.top-sec {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  margin-top: 50px;
+}
+
+.top-sec-text {
+  font-size: 20px;
+  margin-left: 20px;
+  color: rgb(89, 11, 35);
+}
+
+.msg {
+  font-size: 70px;
+  color: rgb(99, 51, 151);
+  margin-top: 10px;
+  margin-left: 150px;
+
+}
+
+.ping-butt {
+  height: 70px;
+  width: 150px;
+  padding-top: 2px;
+  font-family: Borel,cursive;
+  font-size: 30px;
+  white-space: nowrap;
+  background-color: transparent; 
+  margin-top: 10px; 
+  margin-right: 60px;
+  transition: 0.3s  ;
+  cursor: pointer;
+  opacity: 1;
+  color: rgb(207, 197, 200); 
+  margin-top: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.ping-butt:hover
+{
+  opacity: 0.7;
+}
+
